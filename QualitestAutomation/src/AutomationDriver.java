@@ -1,7 +1,6 @@
 
 /*Author:Shivakumar
- *Title:Automation scripts to automate various WebElements using JAVA
- * 
+ *Title:Automation scripts to automate various WebElements using JAVA 
  */
 import java.util.Iterator;
 import java.util.List;
