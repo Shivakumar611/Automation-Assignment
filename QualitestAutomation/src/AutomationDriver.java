@@ -249,16 +249,16 @@ public class AutomationDriver {
 	 * ReturnType:Void
 	 * ParameterCount:1
 	 * ParameterType:WebDriver 
-	 * Description:Method to Automate Mouse Hover and Select top
+	 * Description:Method to Automate Table Scroll down until 
 	 */
 	
 	private static void exercisEight(WebDriver driver) throws InterruptedException {
 		
-		JavascriptExecutor javascrip = (JavascriptExecutor) driver;
-		javascrip.executeScript("window.scrollBy(0,500)");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		driver.manage().window().maximize();
+		js.executeScript("window.scrollBy(0,600)");
 		Thread.sleep(2000);
-		javascrip.executeScript("document.querySelector('.tableFixHead').scrollBy(0,5000)");
-		
+
 	}
 	
 	/*
